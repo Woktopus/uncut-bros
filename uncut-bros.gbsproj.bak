@@ -10316,7 +10316,53 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "select"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "df05fc1f-6804-4cdd-8402-94039a641d7b",
+                                    "$variable[1]$": "1"
+                                },
+                                "id": "093217d7-e2b9-43ab-aa9a-6024f0668bb8"
+                            }
+                        ]
+                    },
+                    "id": "e4134c84-8148-4387-89fd-b7a08c3cf8fc"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "46ef1e8f-e79e-4a5d-ad4e-97fc2bad908e"
+                                },
+                                "id": "5a7be054-c35c-4212-a161-fda783746d9f"
+                            }
+                        ]
+                    },
+                    "id": "72fb8f93-49d8-49e1-90a6-440662dbebf0"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -10336,7 +10382,26 @@
             "x": 1114,
             "y": 860,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "92407761-a4fd-4f82-8285-14c8daa34d7a",
+                    "x": 13,
+                    "y": 10,
+                    "width": 1,
+                    "height": 8,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "1"
+                            },
+                            "id": "c1fd9e7f-2478-4641-b6a4-9492b1165fa4"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [
                 {
                     "command": "EVENT_SET_INPUT_SCRIPT",
@@ -10345,7 +10410,8 @@
                             "select"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -10361,6 +10427,29 @@
                         ]
                     },
                     "id": "6df3a59a-19d0-4f03-9c4e-2dba49caed53"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "46ef1e8f-e79e-4a5d-ad4e-97fc2bad908e"
+                                },
+                                "id": "a252fa50-e8e3-4258-ab2f-55b9d8750405"
+                            }
+                        ]
+                    },
+                    "id": "de6a0f82-a797-4058-9a58-6a51daf56020"
                 }
             ],
             "playerHit1Script": [],
@@ -13069,7 +13158,7 @@
                     "command": "EVENT_IF_TRUE",
                     "args": {
                         "variable": "1",
-                        "__collapseElse": true
+                        "__collapseElse": false
                     },
                     "children": {
                         "true": [
@@ -13102,7 +13191,7 @@
                                                 "variable": "0",
                                                 "value": {
                                                     "type": "number",
-                                                    "value": 1
+                                                    "value": 0
                                                 }
                                             },
                                             "id": "8e5da155-97ea-48c5-9085-58be0feef312"
@@ -13112,19 +13201,20 @@
                                 "id": "5557f840-474c-4506-8541-f7aa07910d7d"
                             }
                         ],
-                        "false": []
+                        "false": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous ne pouvez pas\nchanger d'arme"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "8e5d1d32-a1f6-4f60-917b-415378295312"
+                            }
+                        ]
                     },
                     "id": "4d6f45df-019b-4393-b025-a337b2c97fd4"
-                },
-                {
-                    "command": "EVENT_TEXT",
-                    "args": {
-                        "text": [
-                            "Vous ne pouvez pas\nchanger d'arme"
-                        ],
-                        "avatarId": ""
-                    },
-                    "id": "8e5d1d32-a1f6-4f60-917b-415378295312"
                 }
             ]
         },
@@ -13369,16 +13459,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "018f95d2-befb-4a61-9a86-f967e324b99e",
-        "startX": 4,
-        "startY": 7,
+        "startSceneId": "5fcec55e-86ec-461a-89d3-775814152f48",
+        "startX": 8,
+        "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 906.6666870117188,
-        "worldScrollY": 594,
+        "worldScrollX": 0,
+        "worldScrollY": 94,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
