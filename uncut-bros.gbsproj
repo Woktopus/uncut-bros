@@ -10321,6 +10321,93 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "c8f3f74a-74ba-44d4-9171-48640846c5f8"
+        },
+        {
+            "name": "Scene 6",
+            "backgroundId": "47590193-7c38-4a66-b458-5bf8590df1d3",
+            "width": 20,
+            "height": 18,
+            "type": "PLATFORM",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "f7dfb31b-19fb-4835-9fc6-4571e7a0a94f",
+            "x": 1114,
+            "y": 860,
+            "actors": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "92407761-a4fd-4f82-8285-14c8daa34d7a",
+                    "x": 13,
+                    "y": 10,
+                    "width": 1,
+                    "height": 8,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_TRUE",
+                            "args": {
+                                "variable": "1"
+                            },
+                            "id": "c1fd9e7f-2478-4641-b6a4-9492b1165fa4"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
+            "script": [
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "select"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "df05fc1f-6804-4cdd-8402-94039a641d7b",
+                                    "$variable[0]$": "0",
+                                    "$variable[1]$": "1"
+                                },
+                                "id": "a87f2726-41bc-4df6-a597-fd1f5799cd24"
+                            }
+                        ]
+                    },
+                    "id": "6df3a59a-19d0-4f03-9c4e-2dba49caed53"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "46ef1e8f-e79e-4a5d-ad4e-97fc2bad908e"
+                                },
+                                "id": "a252fa50-e8e3-4258-ab2f-55b9d8750405"
+                            }
+                        ]
+                    },
+                    "id": "de6a0f82-a797-4058-9a58-6a51daf56020"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
@@ -13003,6 +13090,210 @@
                     "id": "fd7783f5-1d00-42ab-a18c-4634bbd18aaa"
                 }
             ]
+        },
+        {
+            "id": "df05fc1f-6804-4cdd-8402-94039a641d7b",
+            "name": "SwitchWeapon",
+            "description": "Change l'arme",
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "carriedWeapon"
+                },
+                "1": {
+                    "id": "1",
+                    "name": "hasWeapon"
+                }
+            },
+            "actors": {},
+            "script": [
+                {
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "1",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_VALUE",
+                                "args": {
+                                    "variable": "0",
+                                    "operator": "==",
+                                    "comparator": 0,
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "0",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "97fc1414-6d43-40fe-a308-f8bb7b747008"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "0",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                }
+                                            },
+                                            "id": "8e5da155-97ea-48c5-9085-58be0feef312"
+                                        }
+                                    ]
+                                },
+                                "id": "5557f840-474c-4506-8541-f7aa07910d7d"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous ne pouvez pas\nchanger d'arme"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "8e5d1d32-a1f6-4f60-917b-415378295312"
+                            }
+                        ]
+                    },
+                    "id": "4d6f45df-019b-4393-b025-a337b2c97fd4"
+                }
+            ]
+        },
+        {
+            "id": "46ef1e8f-e79e-4a5d-ad4e-97fc2bad908e",
+            "name": "onAttack",
+            "description": "Lance attaque",
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "carriedWeapon"
+                }
+            },
+            "actors": {},
+            "script": [
+                {
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "0",
+                        "operator": "==",
+                        "comparator": 0,
+                        "__collapseElse": false,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_IF_ACTOR_DIRECTION",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "direction": "right",
+                                    "__collapseElse": false,
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_LAUNCH_PROJECTILE",
+                                            "args": {
+                                                "spriteSheetId": "6960b5b4-d606-47c5-83d5-e98148bdcf28",
+                                                "spriteStateId": "",
+                                                "actorId": "$self$",
+                                                "x": 16,
+                                                "y": 0,
+                                                "otherActorId": "$self$",
+                                                "direction": "right",
+                                                "angle": 0,
+                                                "angleVariable": "0",
+                                                "directionType": "actor",
+                                                "initialOffset": 0,
+                                                "speed": 0,
+                                                "animSpeed": 15,
+                                                "lifeTime": 0.2,
+                                                "collisionGroup": "3",
+                                                "collisionMask": [
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "__collapse": false
+                                            },
+                                            "id": "6d67d7da-6d5d-4568-8fb9-67b16977ae59"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_LAUNCH_PROJECTILE",
+                                            "args": {
+                                                "spriteSheetId": "6960b5b4-d606-47c5-83d5-e98148bdcf28",
+                                                "spriteStateId": "",
+                                                "actorId": "$self$",
+                                                "x": -16,
+                                                "y": 0,
+                                                "otherActorId": "$self$",
+                                                "direction": "right",
+                                                "angle": 0,
+                                                "angleVariable": "0",
+                                                "directionType": "actor",
+                                                "initialOffset": 0,
+                                                "speed": 0,
+                                                "animSpeed": 15,
+                                                "lifeTime": 0.2,
+                                                "collisionGroup": "3",
+                                                "collisionMask": [
+                                                    "1",
+                                                    "2"
+                                                ],
+                                                "__collapse": false
+                                            },
+                                            "id": "c2ab1e6f-0732-4adb-944b-e6a952d3c86e"
+                                        }
+                                    ]
+                                },
+                                "id": "2cd0bc30-b922-4c6e-935b-34e46fdadedc"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_LAUNCH_PROJECTILE",
+                                "args": {
+                                    "spriteSheetId": "6960b5b4-d606-47c5-83d5-e98148bdcf28",
+                                    "spriteStateId": "",
+                                    "actorId": "$self$",
+                                    "x": 0,
+                                    "y": 0,
+                                    "otherActorId": "$self$",
+                                    "direction": "right",
+                                    "angle": 0,
+                                    "angleVariable": "0",
+                                    "directionType": "actor",
+                                    "initialOffset": 0,
+                                    "speed": 1,
+                                    "animSpeed": 15,
+                                    "lifeTime": 1,
+                                    "collisionGroup": "3",
+                                    "collisionMask": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "id": "2485ac76-e3b0-47e0-b2f8-7f997afe13f0"
+                            }
+                        ]
+                    },
+                    "id": "edf95fab-838a-4d86-98de-69fa7febfef2"
+                }
+            ]
         }
     ],
     "music": [
@@ -13104,7 +13395,16 @@
             "filename": "sweat.png"
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "0",
+            "name": "carriedWeapon"
+        },
+        {
+            "id": "1",
+            "name": "hasWeapon"
+        }
+    ],
     "engineFieldValues": [
         {
             "id": "fade_style",
@@ -13112,17 +13412,17 @@
         }
     ],
     "settings": {
-        "startSceneId": "018f95d2-befb-4a61-9a86-f967e324b99e",
-        "startX": 4,
-        "startY": 7,
+        "startSceneId": "5fcec55e-86ec-461a-89d3-775814152f48",
+        "startX": 8,
+        "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2259,
-        "worldScrollY": 1054,
-        "zoom": 175,
+        "worldScrollX": 187.3333282470703,
+        "worldScrollY": 196.6666717529297,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
@@ -13150,9 +13450,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            400,
-            122,
-            122
+            371,
+            113,
+            113
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
