@@ -10210,7 +10210,41 @@
                     "y": 14,
                     "width": 18,
                     "height": 1,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "022314b2-c14d-4559-9550-16b9f6393ce8"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Ha ha ha, le \nholo-pont",
+                                                "Un coup vieux \ncomme le monde",
+                                                "Bonne chance \ndans le ",
+                                                "sous sols !"
+                                            ],
+                                            "avatarId": "c91b4b37-501b-4d7c-923b-f25398f73598"
+                                        },
+                                        "id": "4543f846-5c34-4612-9315-af475a587017"
+                                    }
+                                ]
+                            },
+                            "id": "cd222092-e68c-4b63-be25-ffe2bcf27768"
+                        }
+                    ],
                     "leaveScript": []
                 }
             ],
@@ -12578,9 +12612,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 431,
-        "worldScrollY": 401,
-        "zoom": 125,
+        "worldScrollX": 581,
+        "worldScrollY": 247,
+        "zoom": 175,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
