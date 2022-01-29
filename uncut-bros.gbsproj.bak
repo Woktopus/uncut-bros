@@ -10657,8 +10657,8 @@
                 {
                     "id": "8ba77283-cc65-4b66-a354-c331c84b09c3",
                     "name": "",
-                    "animationType": "fixed",
-                    "flipLeft": false,
+                    "animationType": "platform_player",
+                    "flipLeft": true,
                     "animations": [
                         {
                             "id": "b3e0134e-0863-4f03-8720-66d48b313d09",
@@ -10759,7 +10759,65 @@
                             "frames": [
                                 {
                                     "id": "533a241f-ef9c-4283-929c-37bc59b2b016",
-                                    "tiles": []
+                                    "tiles": [
+                                        {
+                                            "id": "367da99b-de63-444d-84bf-f48bcd06189e",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "4beade58-702f-4e8f-9951-7817bd621c94",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 8,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "fbc1595f-1a91-4553-9694-933fe419eec8",
+                                    "tiles": [
+                                        {
+                                            "id": "e28f7199-c0b6-4a84-a65c-786cb72c2ab2",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 16,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "0f99ca15-b62c-46bd-bc26-ac2fb76b182b",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 24,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -13582,6 +13640,14 @@
                                     ],
                                     "false": [
                                         {
+                                            "command": "EVENT_ACTOR_SET_SPRITE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "spriteSheetId": "92a6f001-e2a2-4067-98f4-9f94c28825a9"
+                                            },
+                                            "id": "4f662620-e69e-4189-aca9-f2dc4d058b14"
+                                        },
+                                        {
                                             "command": "EVENT_LAUNCH_PROJECTILE",
                                             "args": {
                                                 "spriteSheetId": "6960b5b4-d606-47c5-83d5-e98148bdcf28",
@@ -13606,6 +13672,21 @@
                                                 "__collapse": false
                                             },
                                             "id": "c2ab1e6f-0732-4adb-944b-e6a952d3c86e"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.5
+                                            },
+                                            "id": "7bd4723c-c690-4c3b-9afb-9619a8fc9858"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_SPRITE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "spriteSheetId": "c8f3f74a-74ba-44d4-9171-48640846c5f8"
+                                            },
+                                            "id": "8fdd9223-aed8-43cb-967e-1fdb6c832704"
                                         }
                                     ]
                                 },
