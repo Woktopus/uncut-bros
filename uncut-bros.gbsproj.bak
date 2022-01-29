@@ -15344,6 +15344,47 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "92db06dd-a981-43bb-b354-babed5e664ee",
+                    "x": 10,
+                    "y": 2,
+                    "width": 1,
+                    "height": 8,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "fb381a45-2341-45fc-9a86-05347ab07e0c"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "PLOC.."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "70e682ad-2398-46a3-8614-6bc1ef582ca2"
+                                    }
+                                ]
+                            },
+                            "id": "720a9cdf-3aa1-454a-9b47-3180611bfed8"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [],
