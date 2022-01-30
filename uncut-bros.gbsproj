@@ -16081,7 +16081,26 @@
                     "y": 18
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "1da07c36-16cd-407e-8348-9c8af9ffca5e",
+                    "x": 10,
+                    "y": 21,
+                    "width": 10,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "07dba0d5-3043-4bd2-af69-5a678a96e480"
+                            },
+                            "id": "ed415f8d-8609-4f98-93ce-3d294b0f2d7f"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [
                 {
                     "command": "EVENT_SET_INPUT_SCRIPT",
@@ -16132,7 +16151,15 @@
                 }
             ],
             "playerHit1Script": [],
-            "playerHit2Script": [],
+            "playerHit2Script": [
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "07dba0d5-3043-4bd2-af69-5a678a96e480"
+                    },
+                    "id": "71ecde61-1f31-4673-8a8a-d3566c3620bf"
+                }
+            ],
             "playerHit3Script": [],
             "playerSpriteSheetId": "c8f3f74a-74ba-44d4-9171-48640846c5f8"
         },
@@ -23213,7 +23240,7 @@
             "backgroundId": "2e65432e-ecb9-473b-a86d-eda715fbabfc",
             "width": 20,
             "height": 18,
-            "type": "LOGO",
+            "type": "PLATFORM",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
@@ -23242,8 +23269,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Salut c'est\nles petits",
-                            "gars de \nWoktopus ! ",
+                            "BRAVO!!! \nLe chirurgien \nest vaincu!!!",
                             "Merci d'avoir \njouer à notre",
                             "jeu de la global\ngame jam 2022 !"
                         ],
@@ -23847,7 +23873,7 @@
                     "args": {
                         "sceneId": "704134f6-b6a8-43d9-ad1b-426c57a4f34a",
                         "x": 7,
-                        "y": 16,
+                        "y": 17,
                         "direction": "",
                         "fadeSpeed": "2"
                     },
@@ -29261,6 +29287,34 @@
                     "id": "9dbccae2-3644-4d22-9f4b-2064eb3bf3d3"
                 }
             ]
+        },
+        {
+            "id": "07dba0d5-3043-4bd2-af69-5a678a96e480",
+            "name": "DIEBOSSROOM",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "script": [
+                {
+                    "command": "EVENT_CAMERA_SHAKE",
+                    "args": {
+                        "time": 0.2,
+                        "shakeDirection": "diagonal"
+                    },
+                    "id": "47846011-c9a7-4d89-812e-d323a1e77aae"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "704134f6-b6a8-43d9-ad1b-426c57a4f34a",
+                        "x": 6,
+                        "y": 17,
+                        "direction": "right",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "67fa3e8b-3a88-4466-a4f8-3f37586983d4"
+                }
+            ]
         }
     ],
     "music": [
@@ -29405,16 +29459,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "b2fcba17-d556-4b52-94af-6a5b4c70089d",
-        "startX": 52,
-        "startY": 6,
+        "startSceneId": "e6c76c1d-8536-463e-8737-59632d145edf",
+        "startX": 2,
+        "startY": 5,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 4969.33349609375,
-        "worldScrollY": 966.6666870117188,
+        "worldScrollX": 4960,
+        "worldScrollY": 997,
         "zoom": 125,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -29443,9 +29497,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            306,
-            178,
-            113
+            330,
+            192,
+            122
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
