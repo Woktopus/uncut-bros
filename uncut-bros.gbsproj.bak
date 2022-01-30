@@ -4326,7 +4326,8 @@
                             "args": {
                                 "customEventId": "3c3ceaa1-86ed-463e-8d7d-762979a398e1",
                                 "time": 0.2,
-                                "shakeDirection": "diagonal"
+                                "shakeDirection": "diagonal",
+                                "$variable[0]$": "2"
                             },
                             "id": "b0439dd8-3e19-4903-9ead-6b7c09281104"
                         }
@@ -4462,7 +4463,8 @@
                             "args": {
                                 "customEventId": "3c3ceaa1-86ed-463e-8d7d-762979a398e1",
                                 "time": 0.2,
-                                "shakeDirection": "diagonal"
+                                "shakeDirection": "diagonal",
+                                "$variable[0]$": "2"
                             },
                             "id": "e03f5f5e-6579-405b-b692-6280d97f6258"
                         }
@@ -4482,7 +4484,8 @@
                             "args": {
                                 "customEventId": "3c3ceaa1-86ed-463e-8d7d-762979a398e1",
                                 "time": 0.2,
-                                "shakeDirection": "diagonal"
+                                "shakeDirection": "diagonal",
+                                "$variable[0]$": "2"
                             },
                             "id": "9ee7ca84-f773-4ac3-88a3-8aec7c9399a0"
                         }
@@ -4647,6 +4650,31 @@
                         ]
                     },
                     "id": "e3d3384f-07a7-431f-b79f-47a1ae2d34d5"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "4ef4fe4f-6ece-48de-a6ac-67c08578c36b"
+                            }
+                        ]
+                    },
+                    "id": "7ce808e6-f635-4170-a98e-59d761c09341"
                 }
             ],
             "playerHit1Script": [
@@ -7689,6 +7717,31 @@
                         ]
                     },
                     "id": "72fb8f93-49d8-49e1-90a6-440662dbebf0"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "2b399edd-f248-48a3-9e97-d4683d20bee6"
+                            }
+                        ]
+                    },
+                    "id": "678b8f3b-9592-4b3e-8290-fa69a43d16eb"
                 }
             ],
             "playerHit1Script": [],
@@ -7707,8 +7760,8 @@
             "collisions": [],
             "autoFadeSpeed": 1,
             "id": "f7dfb31b-19fb-4835-9fc6-4571e7a0a94f",
-            "x": 602,
-            "y": 506,
+            "x": 688.6666666666665,
+            "y": 534.0000000000002,
             "actors": [],
             "triggers": [],
             "script": [
@@ -10218,7 +10271,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "249c1f5c-a7f7-4d41-9757-7a613afb341b"
+                                "customEventId": "249c1f5c-a7f7-4d41-9757-7a613afb341b",
+                                "$variable[0]$": "2"
                             },
                             "id": "e01cbff8-01d4-49cf-9da4-f3f223e93213"
                         }
@@ -10355,6 +10409,31 @@
                         ]
                     },
                     "id": "4fbed265-57ee-4871-b2ec-bdc3d17f0ffa"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "93957092-d810-488c-b02c-b856084e8c00"
+                            }
+                        ]
+                    },
+                    "id": "27b023d0-7602-4795-9c85-da65a638ee1c"
                 }
             ],
             "playerHit1Script": [],
@@ -12871,6 +12950,31 @@
                         ]
                     },
                     "id": "a9e4b057-4a14-49cb-be87-5b2ea7482cdd"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "8ced1c41-b1e0-4425-827a-7fa8c524ddb9"
+                            }
+                        ]
+                    },
+                    "id": "10268237-f465-4d65-9da1-a84d1f170f5d"
                 }
             ],
             "playerHit1Script": [],
@@ -15422,6 +15526,31 @@
                         ]
                     },
                     "id": "b24cb61a-c0e7-415e-a8f2-a36b59c579f2"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "287536a7-3eb9-496d-ae87-641edd31caae"
+                            }
+                        ]
+                    },
+                    "id": "64f51277-73ce-4f01-8165-29db3f32b138"
                 }
             ],
             "playerHit1Script": [],
@@ -16093,7 +16222,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "07dba0d5-3043-4bd2-af69-5a678a96e480"
+                                "customEventId": "07dba0d5-3043-4bd2-af69-5a678a96e480",
+                                "$variable[0]$": "2"
                             },
                             "id": "ed415f8d-8609-4f98-93ce-3d294b0f2d7f"
                         }
@@ -16148,6 +16278,31 @@
                         ]
                     },
                     "id": "be3c14b8-0138-4d1d-8edd-015af28f496f"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "1e85f25b-f015-49c7-aa09-06793c9bbd4f"
+                            }
+                        ]
+                    },
+                    "id": "528330ec-038a-4154-81b3-98f93ee1f0f8"
                 }
             ],
             "playerHit1Script": [],
@@ -16844,7 +16999,7 @@
                         {
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 1.5
+                                "time": 1.7
                             },
                             "id": "f2339a5b-a027-403e-a89f-1b65c0230c8d"
                         }
@@ -16897,7 +17052,7 @@
                         {
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 1.5
+                                "time": 1.7
                             },
                             "id": "bd52d098-b4bd-4923-8815-288fb61cf43b"
                         }
@@ -16944,7 +17099,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "8992ac7e-0955-4d5d-9582-632f9636ef24"
+                                "customEventId": "8992ac7e-0955-4d5d-9582-632f9636ef24",
+                                "$variable[0]$": "2"
                             },
                             "id": "2206a5ee-d504-4db1-8a08-31950602db17"
                         }
@@ -16962,7 +17118,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "8992ac7e-0955-4d5d-9582-632f9636ef24"
+                                "customEventId": "8992ac7e-0955-4d5d-9582-632f9636ef24",
+                                "$variable[0]$": "2"
                             },
                             "id": "970bd18f-3031-4c1e-add0-875550bcfb74"
                         }
@@ -17017,6 +17174,31 @@
                         ]
                     },
                     "id": "8148f832-4ad4-4cd1-bad6-5ec55ef363e1"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "a69093a8-d7c2-471a-a4be-7208cbfbb539"
+                            }
+                        ]
+                    },
+                    "id": "a074def5-b083-4dab-95a0-d8eba44bd115"
                 }
             ],
             "playerHit1Script": [],
@@ -18568,7 +18750,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "907582cf-dbed-4511-9970-b09bb5e2cd61"
+                                "customEventId": "907582cf-dbed-4511-9970-b09bb5e2cd61",
+                                "$variable[0]$": "2"
                             },
                             "id": "171c7d66-2bfe-40f0-8a1c-08abecec309b"
                         }
@@ -18586,7 +18769,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "907582cf-dbed-4511-9970-b09bb5e2cd61"
+                                "customEventId": "907582cf-dbed-4511-9970-b09bb5e2cd61",
+                                "$variable[0]$": "2"
                             },
                             "id": "69f413c8-957a-418d-a141-fbe2098fd6cb"
                         }
@@ -18705,6 +18889,31 @@
                         ]
                     },
                     "id": "cab0f39c-9ab0-4e50-ab08-52908d610a65"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "545ac0fc-c632-4154-80f8-419f4bcb76b6"
+                            }
+                        ]
+                    },
+                    "id": "833660fd-c266-4ee6-a483-ec882fcf3f2a"
                 }
             ],
             "playerHit1Script": [],
@@ -19731,7 +19940,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "25bef14f-71f6-447e-8110-ff6292a7b827"
+                                "customEventId": "25bef14f-71f6-447e-8110-ff6292a7b827",
+                                "$variable[0]$": "2"
                             },
                             "id": "493c9a41-9841-4f9d-b01c-94ace5aa36c1"
                         }
@@ -19749,7 +19959,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "25bef14f-71f6-447e-8110-ff6292a7b827"
+                                "customEventId": "25bef14f-71f6-447e-8110-ff6292a7b827",
+                                "$variable[0]$": "2"
                             },
                             "id": "76711388-26d9-4131-8213-fd28b5cb9cb8"
                         }
@@ -19804,6 +20015,31 @@
                         ]
                     },
                     "id": "0afa71c7-7611-447c-80ba-d93324884314"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "801c35f4-9d95-48b5-8c77-ff8205c95b6e"
+                            }
+                        ]
+                    },
+                    "id": "02a99ff3-9156-476a-91c9-308c2c249832"
                 }
             ],
             "playerHit1Script": [],
@@ -20962,7 +21198,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63"
+                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63",
+                                "$variable[0]$": "2"
                             },
                             "id": "e33d5951-7205-441c-8ac5-466f75d6f416"
                         }
@@ -20980,7 +21217,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63"
+                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63",
+                                "$variable[0]$": "2"
                             },
                             "id": "c3ee0a0b-c1ef-460d-8a96-d4210309958d"
                         }
@@ -20998,7 +21236,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63"
+                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63",
+                                "$variable[0]$": "2"
                             },
                             "id": "43f974b1-5223-4e56-a2d5-f1077623f877"
                         }
@@ -21038,7 +21277,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63"
+                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63",
+                                "$variable[0]$": "2"
                             },
                             "id": "e4f0be72-d419-4256-a568-7b85f2e81b2f"
                         }
@@ -21056,7 +21296,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63"
+                                "customEventId": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63",
+                                "$variable[0]$": "2"
                             },
                             "id": "56cfbec5-cdc5-4f40-9233-d064e0f78d65"
                         }
@@ -21111,6 +21352,31 @@
                         ]
                     },
                     "id": "acdff89d-32de-4c36-aacb-dda7119c4a1e"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "d73810a6-9e9e-43b6-9ffd-4dcae2b85f0e"
+                            }
+                        ]
+                    },
+                    "id": "98848d38-e2b3-46bb-81ac-36b33d10417c"
                 }
             ],
             "playerHit1Script": [],
@@ -23064,7 +23330,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "8524ed06-1dc6-4211-9070-6b41ebeba13c"
+                                "customEventId": "8524ed06-1dc6-4211-9070-6b41ebeba13c",
+                                "$variable[0]$": "2"
                             },
                             "id": "d37b8701-d26a-4a26-8088-88793cbb89ea"
                         }
@@ -23082,7 +23349,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "8524ed06-1dc6-4211-9070-6b41ebeba13c"
+                                "customEventId": "8524ed06-1dc6-4211-9070-6b41ebeba13c",
+                                "$variable[0]$": "2"
                             },
                             "id": "a9bf2736-43ed-4d5e-94eb-81290b4ce106"
                         }
@@ -23100,7 +23368,8 @@
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
-                                "customEventId": "8524ed06-1dc6-4211-9070-6b41ebeba13c"
+                                "customEventId": "8524ed06-1dc6-4211-9070-6b41ebeba13c",
+                                "$variable[0]$": "2"
                             },
                             "id": "93005a62-b13c-4950-a894-f95a54d60ed9"
                         }
@@ -23219,6 +23488,31 @@
                         ]
                     },
                     "id": "0bcd48d4-be3c-4e95-8f13-63ffe65d5786"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Vous êtes mort\n$02$ fois"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "f8638828-ff6a-4ff6-90ae-94dcf3637648"
+                            }
+                        ]
+                    },
+                    "id": "68c0a23d-0224-4baa-90df-860393edbd1e"
                 }
             ],
             "playerHit1Script": [],
@@ -23270,6 +23564,7 @@
                     "args": {
                         "text": [
                             "BRAVO!!! \nLe chirurgien \nest vaincu!!!",
+                            "Vous êtes mort\n$02$ fois!",
                             "Merci d'avoir \njouer à notre",
                             "jeu de la global\ngame jam 2022 !"
                         ],
@@ -23986,7 +24281,7 @@
         },
         {
             "name": "bd3",
-            "backgroundId": "2e65432e-ecb9-473b-a86d-eda715fbabfc",
+            "backgroundId": "5968bee5-0cb9-4b02-8b29-3f90ef3672a5",
             "width": 20,
             "height": 18,
             "type": "LOGO",
@@ -24148,6 +24443,17 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "2",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "331c8ea6-4521-4e6d-aa79-3244b0d82f8a"
+                },
+                {
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "$self$"
@@ -24199,7 +24505,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "bd1.png"
+            "filename": "bd1.png",
+            "tileColors": []
         },
         {
             "id": "120b9aaa-c737-4193-9d42-a732b8c6d71c",
@@ -24208,7 +24515,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "bd2.png"
+            "filename": "bd2.png",
+            "tileColors": []
         },
         {
             "id": "f79d15fa-ca6a-49c7-b241-ff07094b6860",
@@ -24218,6 +24526,16 @@
             "imageWidth": 160,
             "imageHeight": 176,
             "filename": "bossroom.png",
+            "tileColors": []
+        },
+        {
+            "id": "5968bee5-0cb9-4b02-8b29-3f90ef3672a5",
+            "name": "bs5",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "bs5.png",
             "tileColors": []
         },
         {
@@ -28955,6 +29273,13 @@
             "actors": {},
             "script": [
                 {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "4edf15f5-16c8-487d-a54a-b094eeefe1ee"
+                },
+                {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
                         "time": 0.2,
@@ -28972,13 +29297,6 @@
                         "fadeSpeed": "2"
                     },
                     "id": "fd7783f5-1d00-42ab-a18c-4634bbd18aaa"
-                },
-                {
-                    "command": "EVENT_INC_VALUE",
-                    "args": {
-                        "variable": "0"
-                    },
-                    "id": "4edf15f5-16c8-487d-a54a-b094eeefe1ee"
                 }
             ]
         },
@@ -29209,7 +29527,7 @@
                                     "x": 5,
                                     "y": 0,
                                     "moveType": "horizontal",
-                                    "useCollisions": false
+                                    "useCollisions": true
                                 },
                                 "id": "b1a55e1c-bc07-406f-a8ee-5116dfa3e142"
                             }
@@ -29239,6 +29557,13 @@
             "actors": {},
             "script": [
                 {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "4489a308-b2bd-4700-85b4-4d8c50c8a933"
+                },
+                {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
                         "time": 0.2,
@@ -29256,13 +29581,6 @@
                         "fadeSpeed": "2"
                     },
                     "id": "1b7ac5f0-5892-4b47-8044-e7d52fc32bbb"
-                },
-                {
-                    "command": "EVENT_INC_VALUE",
-                    "args": {
-                        "variable": "0"
-                    },
-                    "id": "4489a308-b2bd-4700-85b4-4d8c50c8a933"
                 }
             ]
         },
@@ -29278,6 +29596,13 @@
             },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "846d6110-1f8e-416f-a726-6ee2fb6b795a"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29296,13 +29621,6 @@
                         "fadeSpeed": "2"
                     },
                     "id": "c352981d-9e31-4a54-a279-171fad5d1367"
-                },
-                {
-                    "command": "EVENT_INC_VALUE",
-                    "args": {
-                        "variable": "0"
-                    },
-                    "id": "846d6110-1f8e-416f-a726-6ee2fb6b795a"
                 }
             ]
         },
@@ -29318,6 +29636,13 @@
             },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "f8c2bfdf-940f-4b58-b252-722482193edc"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29336,13 +29661,6 @@
                         "fadeSpeed": "2"
                     },
                     "id": "3a484aee-7702-4c2e-a845-d903341c9695"
-                },
-                {
-                    "command": "EVENT_INC_VALUE",
-                    "args": {
-                        "variable": "0"
-                    },
-                    "id": "f8c2bfdf-940f-4b58-b252-722482193edc"
                 }
             ]
         },
@@ -29358,6 +29676,13 @@
             },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "2958b08c-35f6-4332-9dae-7a97294b92ab"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29376,13 +29701,6 @@
                         "fadeSpeed": "2"
                     },
                     "id": "3d938558-adf1-48e5-b2c4-f597fe6f5cfd"
-                },
-                {
-                    "command": "EVENT_INC_VALUE",
-                    "args": {
-                        "variable": "0"
-                    },
-                    "id": "2958b08c-35f6-4332-9dae-7a97294b92ab"
                 }
             ]
         },
@@ -29398,6 +29716,13 @@
             },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "dd12de26-4cf3-4c8e-8210-18d6f640a4c8"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29416,13 +29741,6 @@
                         "fadeSpeed": "2"
                     },
                     "id": "3d3423dd-56f6-442d-ad42-5d063c6714b5"
-                },
-                {
-                    "command": "EVENT_INC_VALUE",
-                    "args": {
-                        "variable": "0"
-                    },
-                    "id": "dd12de26-4cf3-4c8e-8210-18d6f640a4c8"
                 }
             ]
         },
@@ -29430,9 +29748,21 @@
             "id": "8992ac7e-0955-4d5d-9582-632f9636ef24",
             "name": "die1-3-2",
             "description": "",
-            "variables": {},
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "deathcount"
+                }
+            },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "b0eefac1-64ce-4225-b666-e64b23d1fec0"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29446,7 +29776,7 @@
                     "args": {
                         "sceneId": "e7d3c435-6a5d-451a-8ba0-031566d67d73",
                         "x": 10,
-                        "y": 20,
+                        "y": 22,
                         "direction": "",
                         "fadeSpeed": "2"
                     },
@@ -29458,9 +29788,21 @@
             "id": "25bef14f-71f6-447e-8110-ff6292a7b827",
             "name": "die1-3-3",
             "description": "",
-            "variables": {},
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "Variable A"
+                }
+            },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "1a8bfae6-f302-4104-a306-1da2504d8327"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29486,9 +29828,21 @@
             "id": "837bcbed-f9ae-4ffa-8014-fe8dc1e31e63",
             "name": "die1-3-4",
             "description": "",
-            "variables": {},
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "Variable A"
+                }
+            },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "2c8a3cb8-b699-4f28-9dc6-f6f8cd0f0401"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29514,9 +29868,21 @@
             "id": "8524ed06-1dc6-4211-9070-6b41ebeba13c",
             "name": "die1-3-5",
             "description": "",
-            "variables": {},
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "Variable A"
+                }
+            },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "de268699-fb43-48c8-b089-99f81f9a8045"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29606,9 +29972,21 @@
             "id": "07dba0d5-3043-4bd2-af69-5a678a96e480",
             "name": "DIEBOSSROOM",
             "description": "",
-            "variables": {},
+            "variables": {
+                "0": {
+                    "id": "0",
+                    "name": "Variable A"
+                }
+            },
             "actors": {},
             "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "0"
+                    },
+                    "id": "4725dfb8-bd31-489e-9f08-b5a6c311f52f"
+                },
                 {
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
@@ -29781,9 +30159,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 613,
-        "worldScrollY": 275,
-        "zoom": 75,
+        "worldScrollX": 3765,
+        "worldScrollY": 631,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
