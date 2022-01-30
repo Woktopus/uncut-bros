@@ -7707,8 +7707,8 @@
             "collisions": [],
             "autoFadeSpeed": 1,
             "id": "f7dfb31b-19fb-4835-9fc6-4571e7a0a94f",
-            "x": 602,
-            "y": 506,
+            "x": 688.6666666666665,
+            "y": 534.0000000000002,
             "actors": [],
             "triggers": [],
             "script": [
@@ -16844,7 +16844,7 @@
                         {
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 1.5
+                                "time": 1.7
                             },
                             "id": "f2339a5b-a027-403e-a89f-1b65c0230c8d"
                         }
@@ -16897,7 +16897,7 @@
                         {
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 1.5
+                                "time": 1.7
                             },
                             "id": "bd52d098-b4bd-4923-8815-288fb61cf43b"
                         }
@@ -23986,7 +23986,7 @@
         },
         {
             "name": "bd3",
-            "backgroundId": "2e65432e-ecb9-473b-a86d-eda715fbabfc",
+            "backgroundId": "5968bee5-0cb9-4b02-8b29-3f90ef3672a5",
             "width": 20,
             "height": 18,
             "type": "LOGO",
@@ -24219,6 +24219,15 @@
             "imageHeight": 176,
             "filename": "bossroom.png",
             "tileColors": []
+        },
+        {
+            "id": "5968bee5-0cb9-4b02-8b29-3f90ef3672a5",
+            "name": "bs5",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "bs5.png"
         },
         {
             "id": "995b1776-c64b-44c5-b60d-1187e67c5575",
@@ -29446,7 +29455,7 @@
                     "args": {
                         "sceneId": "e7d3c435-6a5d-451a-8ba0-031566d67d73",
                         "x": 10,
-                        "y": 20,
+                        "y": 22,
                         "direction": "",
                         "fadeSpeed": "2"
                     },
@@ -29781,9 +29790,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 613,
-        "worldScrollY": 275,
-        "zoom": 75,
+        "worldScrollX": 6055,
+        "worldScrollY": 1416,
+        "zoom": 175,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
