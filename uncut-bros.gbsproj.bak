@@ -16108,6 +16108,14 @@
                     "startScript": [],
                     "updateScript": [
                         {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
+                                "$variable[0]$": "L0"
+                            },
+                            "id": "139a389c-2695-4d76-9988-44ad0c42d6e5"
+                        },
+                        {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "$self$",
@@ -16123,6 +16131,14 @@
                                 "useCollisions": false
                             },
                             "id": "4f9b5b69-f9cb-4fbc-bab4-2df16d9f2e7b"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
+                                "$variable[0]$": "L0"
+                            },
+                            "id": "a18f1191-8103-4578-8db2-f69f086b4e70"
                         },
                         {
                             "command": "EVENT_ACTOR_MOVE_TO",
@@ -16142,6 +16158,14 @@
                             "id": "63c6daac-78ea-4f13-bb85-70b2b4c06d90"
                         },
                         {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
+                                "$variable[0]$": "L0"
+                            },
+                            "id": "82a2a5d4-5176-4eb0-a582-d1e2a97b2826"
+                        },
+                        {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "$self$",
@@ -16157,6 +16181,14 @@
                                 "useCollisions": false
                             },
                             "id": "5a91921a-d973-41e4-9985-fa284e5601ab"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
+                                "$variable[0]$": "L0"
+                            },
+                            "id": "2c2e996a-2b44-43d8-95d6-8f37e6f3dae4"
                         },
                         {
                             "command": "EVENT_ACTOR_MOVE_TO",
@@ -16176,6 +16208,14 @@
                             "id": "b8c3f981-b218-4749-afbd-c0b747201b76"
                         },
                         {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
+                                "$variable[0]$": "L0"
+                            },
+                            "id": "7ac754cb-74fb-420e-90a5-b0e7703341ec"
+                        },
+                        {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "$self$",
@@ -16193,6 +16233,14 @@
                             "id": "3c961bb0-af33-46a1-bac5-71d46967b8bf"
                         },
                         {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
+                                "$variable[0]$": "L0"
+                            },
+                            "id": "c07ac1ea-2e39-4269-af62-86044cb864f5"
+                        },
+                        {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "$self$",
@@ -16208,20 +16256,6 @@
                                 "useCollisions": false
                             },
                             "id": "04cba671-d979-4cd5-b354-592f444a8dd9"
-                        },
-                        {
-                            "id": "15aab4d1-a147-49ab-ac73-b06366a5c000",
-                            "command": "EVENT_VARIABLE_MATH",
-                            "args": {
-                                "vectorX": "L0",
-                                "operation": "set",
-                                "other": "rnd",
-                                "vectorY": "L0",
-                                "value": "1",
-                                "minValue": 200,
-                                "maxValue": 150,
-                                "clamp": false
-                            }
                         },
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -28721,9 +28755,9 @@
             "name": "bossAttack",
             "description": "bossAttack",
             "variables": {
-                "0": {
-                    "id": "0",
-                    "name": "angle"
+                "1": {
+                    "id": "1",
+                    "name": "Variable B"
                 }
             },
             "actors": {
@@ -28736,9 +28770,23 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2
+                        "time": 0.3
                     },
                     "id": "2d21f9e6-406e-48de-9d36-b1ba5fef5218"
+                },
+                {
+                    "id": "209f04f5-f914-478d-918e-7cc5d7f65ad0",
+                    "command": "EVENT_VARIABLE_MATH",
+                    "args": {
+                        "vectorX": "1",
+                        "operation": "set",
+                        "other": "rnd",
+                        "vectorY": "L0",
+                        "value": "1",
+                        "minValue": 200,
+                        "maxValue": 150,
+                        "clamp": false
+                    }
                 },
                 {
                     "command": "EVENT_LAUNCH_PROJECTILE",
@@ -28751,7 +28799,7 @@
                         "otherActorId": "$self$",
                         "direction": "left",
                         "angle": 0,
-                        "angleVariable": "0",
+                        "angleVariable": "1",
                         "directionType": "anglevar",
                         "initialOffset": 16,
                         "speed": 2,
@@ -28917,8 +28965,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 8094,
-        "worldScrollY": 1738,
+        "worldScrollX": 8096,
+        "worldScrollY": 1737,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,

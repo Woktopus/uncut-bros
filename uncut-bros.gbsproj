@@ -16103,9 +16103,21 @@
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
-                    "collisionGroup": "",
+                    "collisionGroup": "1",
                     "script": [],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "3",
+                                "value": {
+                                    "type": "number",
+                                    "value": 3
+                                }
+                            },
+                            "id": "3acdb977-0461-48cf-9f60-f58e0fdc0e6a"
+                        }
+                    ],
                     "updateScript": [
                         {
                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -16268,7 +16280,52 @@
                     ],
                     "hit1Script": [],
                     "hit2Script": [],
-                    "hit3Script": [],
+                    "hit3Script": [
+                        {
+                            "command": "EVENT_DEC_VALUE",
+                            "args": {
+                                "variable": "3"
+                            },
+                            "id": "6dc06def-7bc4-4aea-aae8-b8edd44ab4fc"
+                        },
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "L0",
+                                "operator": "<=",
+                                "comparator": "0",
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "NON J4AI PERDU"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "2e627243-65ba-4886-adb0-ed69d57c4517"
+                                    },
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "e6c76c1d-8536-463e-8737-59632d145edf",
+                                            "x": 0,
+                                            "y": 0,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "7fea868d-25da-4098-b60a-3c30837932f7"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "95b3ebcb-d728-4344-9b1b-eef78bdce6c6"
+                        }
+                    ],
                     "id": "472aff55-1ba2-426f-b1d8-027230cbdbd1",
                     "x": 17,
                     "y": 28
@@ -28348,8 +28405,8 @@
                                     "directionType": "actor",
                                     "initialOffset": 16,
                                     "speed": 1,
-                                    "animSpeed": 15,
-                                    "lifeTime": 1,
+                                    "animSpeed": 1,
+                                    "lifeTime": 2,
                                     "collisionGroup": "3",
                                     "collisionMask": [
                                         "1",
@@ -28805,9 +28862,9 @@
                         "speed": 2,
                         "animSpeed": 15,
                         "lifeTime": 1,
-                        "collisionGroup": "3",
+                        "collisionGroup": "2",
                         "collisionMask": [
-                            "1"
+                            "player"
                         ]
                     },
                     "id": "9dbccae2-3644-4d22-9f4b-2064eb3bf3d3"
