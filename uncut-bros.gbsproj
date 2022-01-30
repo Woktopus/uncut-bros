@@ -23014,7 +23014,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "GOtheme.png"
+            "filename": "GOtheme.png",
+            "tileColors": []
         },
         {
             "id": "47590193-7c38-4a66-b458-5bf8590df1d3",
@@ -23103,7 +23104,8 @@
             "height": 26,
             "imageWidth": 464,
             "imageHeight": 208,
-            "filename": "level1-3-1.png"
+            "filename": "level1-3-1.png",
+            "tileColors": []
         },
         {
             "id": "64520c9c-d2c8-4378-ad61-bf57d4742cad",
@@ -23112,7 +23114,8 @@
             "height": 26,
             "imageWidth": 176,
             "imageHeight": 208,
-            "filename": "level1-3-2.png"
+            "filename": "level1-3-2.png",
+            "tileColors": []
         },
         {
             "id": "773ba387-1515-4c34-9d3e-7d21a4b10305",
@@ -23121,7 +23124,8 @@
             "height": 34,
             "imageWidth": 176,
             "imageHeight": 272,
-            "filename": "level1-3-3.png"
+            "filename": "level1-3-3.png",
+            "tileColors": []
         },
         {
             "id": "dced891f-62bd-4461-9611-843c54c24859",
@@ -23130,7 +23134,8 @@
             "height": 42,
             "imageWidth": 192,
             "imageHeight": 336,
-            "filename": "level1-3-4.png"
+            "filename": "level1-3-4.png",
+            "tileColors": []
         },
         {
             "id": "8580910c-1afd-48b5-97f2-c60082874938",
@@ -23139,7 +23144,8 @@
             "height": 32,
             "imageWidth": 464,
             "imageHeight": 256,
-            "filename": "level1-3-5.png"
+            "filename": "level1-3-5.png",
+            "tileColors": []
         },
         {
             "id": "20711438-d9dc-49fc-8249-c201b3930700",
@@ -28458,7 +28464,7 @@
         }
     ],
     "settings": {
-        "startSceneId": "b2fcba17-d556-4b52-94af-6a5b4c70089d",
+        "startSceneId": "018f95d2-befb-4a61-9a86-f967e324b99e",
         "startX": 9,
         "startY": 6,
         "startMoveSpeed": 1,
@@ -28466,8 +28472,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3510.666748046875,
-        "worldScrollY": 624,
+        "worldScrollX": 2022,
+        "worldScrollY": 711,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
@@ -28496,9 +28502,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            306,
-            178,
-            113
+            330,
+            192,
+            122
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

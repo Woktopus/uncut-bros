@@ -22878,6 +22878,48 @@
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "6470885e-aed8-48d5-b56e-9cc7fbd29d73",
+                    "x": 34,
+                    "y": 0,
+                    "width": 2,
+                    "height": 28,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "c2e554d4-8836-4c20-b148-fa6b0042de61"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Dépêchez vous\nils approchent",
+                                                "de la sortie !!!\nCode ROUGE !"
+                                            ],
+                                            "avatarId": "d3417776-fb93-4a4a-97d7-2d81ffae8595"
+                                        },
+                                        "id": "750dc081-d7df-4ed3-92a6-747981726595"
+                                    }
+                                ]
+                            },
+                            "id": "4a8eeee9-76b4-4562-b4b4-40d6ffaa1ec7"
+                        }
+                    ],
+                    "leaveScript": []
                 }
             ],
             "script": [
@@ -28424,8 +28466,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3152.666748046875,
-        "worldScrollY": 760.6666870117188,
+        "worldScrollX": 3510.666748046875,
+        "worldScrollY": 624,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
