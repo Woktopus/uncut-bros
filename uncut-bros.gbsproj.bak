@@ -4560,31 +4560,32 @@
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "L0",
-                                "__collapseElse": true
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [],
-                                "false": []
+                                "false": [
+                                    {
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        },
+                                        "id": "485e0821-b2bf-42f2-97b6-6159c7d335ab"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Ha ha ha..\njamais ils ne",
+                                                "vont appuyer sur\nB pour attaquer"
+                                            ],
+                                            "avatarId": "d3417776-fb93-4a4a-97d7-2d81ffae8595"
+                                        },
+                                        "id": "51dbd27b-7180-413a-bf86-a8e38b17385a"
+                                    }
+                                ]
                             },
                             "id": "868eb9b0-ea66-498c-834e-de803c4a1508"
-                        },
-                        {
-                            "command": "EVENT_SET_TRUE",
-                            "args": {
-                                "variable": "L0"
-                            },
-                            "id": "485e0821-b2bf-42f2-97b6-6159c7d335ab"
-                        },
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Ha ha ha..\njamais ils ne",
-                                    "vont appuyer sur\nB pour attaquer"
-                                ],
-                                "avatarId": "d3417776-fb93-4a4a-97d7-2d81ffae8595"
-                            },
-                            "id": "51dbd27b-7180-413a-bf86-a8e38b17385a"
                         }
                     ],
                     "leaveScript": []
@@ -9923,8 +9924,8 @@
             ],
             "autoFadeSpeed": 1,
             "id": "8ef18a7d-08f6-40f0-94d3-34fda4a25047",
-            "x": 2442.3999999999983,
-            "y": 635.4666666666678,
+            "x": 2459.9999999999973,
+            "y": 648.3809523809537,
             "actors": [
                 {
                     "name": "",
@@ -15271,7 +15272,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Bravo ! Tu es morts\n$02$ fois"
+                                    "Bravo ! Tu es morts\n.......",
+                                    "$02$ fois"
                                 ],
                                 "avatarId": "d3417776-fb93-4a4a-97d7-2d81ffae8595"
                             },
@@ -19517,9 +19519,9 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3182,
-        "worldScrollY": 990,
-        "zoom": 125,
+        "worldScrollX": 1601,
+        "worldScrollY": 348,
+        "zoom": 75,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
