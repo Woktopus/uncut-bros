@@ -15442,7 +15442,7 @@
             "name": "Boss room",
             "backgroundId": "f79d15fa-ca6a-49c7-b241-ff07094b6860",
             "width": 20,
-            "height": 32,
+            "height": 22,
             "type": "PLATFORM",
             "paletteIds": [],
             "spritePaletteIds": [],
@@ -15491,206 +15491,6 @@
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                15,
-                17,
-                17,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                15,
-                17,
-                17,
-                15,
-                15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                16,
-                16,
                 0,
                 0,
                 0,
@@ -16090,8 +15890,8 @@
             ],
             "autoFadeSpeed": 1,
             "id": "704134f6-b6a8-43d9-ad1b-426c57a4f34a",
-            "x": 4240.333333333334,
-            "y": 892.5000000000002,
+            "x": 4241.333333333334,
+            "y": 931.5000000000002,
             "actors": [
                 {
                     "name": "",
@@ -16133,11 +15933,11 @@
                                 "actorId": "$self$",
                                 "x": {
                                     "type": "number",
-                                    "value": 17
+                                    "value": 16
                                 },
                                 "y": {
                                     "type": "number",
-                                    "value": 22
+                                    "value": 12
                                 },
                                 "moveType": "vertical",
                                 "useCollisions": false
@@ -16158,11 +15958,11 @@
                                 "actorId": "$self$",
                                 "x": {
                                     "type": "number",
-                                    "value": 17
+                                    "value": 16
                                 },
                                 "y": {
                                     "type": "number",
-                                    "value": 15
+                                    "value": 4
                                 },
                                 "moveType": "vertical",
                                 "useCollisions": false
@@ -16183,11 +15983,11 @@
                                 "actorId": "$self$",
                                 "x": {
                                     "type": "number",
-                                    "value": 17
+                                    "value": 16
                                 },
                                 "y": {
                                     "type": "number",
-                                    "value": 7
+                                    "value": 12
                                 },
                                 "moveType": "vertical",
                                 "useCollisions": false
@@ -16208,11 +16008,11 @@
                                 "actorId": "$self$",
                                 "x": {
                                     "type": "number",
-                                    "value": 17
+                                    "value": 16
                                 },
                                 "y": {
                                     "type": "number",
-                                    "value": 15
+                                    "value": 18
                                 },
                                 "moveType": "vertical",
                                 "useCollisions": false
@@ -16226,56 +16026,6 @@
                                 "$variable[0]$": "L0"
                             },
                             "id": "7ac754cb-74fb-420e-90a5-b0e7703341ec"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_MOVE_TO",
-                            "args": {
-                                "actorId": "$self$",
-                                "x": {
-                                    "type": "number",
-                                    "value": 17
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 28
-                                },
-                                "moveType": "vertical",
-                                "useCollisions": false
-                            },
-                            "id": "3c961bb0-af33-46a1-bac5-71d46967b8bf"
-                        },
-                        {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
-                                "$variable[0]$": "L0"
-                            },
-                            "id": "c07ac1ea-2e39-4269-af62-86044cb864f5"
-                        },
-                        {
-                            "command": "EVENT_ACTOR_MOVE_TO",
-                            "args": {
-                                "actorId": "$self$",
-                                "x": {
-                                    "type": "number",
-                                    "value": 17
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 22
-                                },
-                                "moveType": "vertical",
-                                "useCollisions": false
-                            },
-                            "id": "04cba671-d979-4cd5-b354-592f444a8dd9"
-                        },
-                        {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "b5e4a616-d248-4a6c-b592-062c3238961a",
-                                "$variable[0]$": "L0"
-                            },
-                            "id": "f7d05c98-d420-4477-9f84-19a4ecf9f6e9"
                         }
                     ],
                     "hit1Script": [],
@@ -16291,7 +16041,7 @@
                         {
                             "command": "EVENT_IF_VALUE",
                             "args": {
-                                "variable": "L0",
+                                "variable": "3",
                                 "operator": "<=",
                                 "comparator": "0",
                                 "__collapseElse": true,
@@ -16303,7 +16053,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "NON J4AI PERDU"
+                                                "NON J'AI PERDU"
                                             ],
                                             "avatarId": ""
                                         },
@@ -16327,8 +16077,8 @@
                         }
                     ],
                     "id": "472aff55-1ba2-426f-b1d8-027230cbdbd1",
-                    "x": 17,
-                    "y": 28
+                    "x": 16,
+                    "y": 18
                 }
             ],
             "triggers": [],
@@ -23384,8 +23134,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "704134f6-b6a8-43d9-ad1b-426c57a4f34a",
-                                "x": 6,
-                                "y": 28,
+                                "x": 5,
+                                "y": 18,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             },
@@ -23494,10 +23244,19 @@
             "id": "f79d15fa-ca6a-49c7-b241-ff07094b6860",
             "name": "bossroom",
             "width": 20,
-            "height": 32,
+            "height": 22,
             "imageWidth": 160,
-            "imageHeight": 256,
+            "imageHeight": 176,
             "filename": "bossroom.png"
+        },
+        {
+            "id": "995b1776-c64b-44c5-b60d-1187e67c5575",
+            "name": "cinematiqueBoss",
+            "width": 22,
+            "height": 22,
+            "imageWidth": 176,
+            "imageHeight": 176,
+            "filename": "cinematiqueBoss.png"
         },
         {
             "id": "47590193-7c38-4a66-b458-5bf8590df1d3",
@@ -29022,8 +28781,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 8096,
-        "worldScrollY": 1737,
+        "worldScrollX": 8274,
+        "worldScrollY": 1852,
         "zoom": 200,
         "customColorsEnabled": false,
         "sgbEnabled": false,
